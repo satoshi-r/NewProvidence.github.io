@@ -1,0 +1,888 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Varela+Round')
+
+// Preloader
+#hellopreloader>p 
+  display: none;
+
+
+#hellopreloader_preload 
+  display: block;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  // min-width: 1000px;
+  background: #336E7B url(http://hello-site.ru//main/images/preloads/three-dots.svg) center center no-repeat;
+  background-size: 78px;
+
+// 
+
+
+
+a, a:hover, a:focus, a:active
+	text-decoration: none
+	color: #000
+
+li
+	list-style-type: none
+
+ul
+	margin: 0px
+	padding: 0px
+
+body
+	font-family: 'Lato', sans-serif !important
+	background-color: #f5f5f7 !important
+	font-size: 16px
+	color: #26272d
+
+
+body input:focus:required:invalid,
+body input:required:valid,
+body textarea:focus:required:invalid,
+body textarea:required:valid
+  color: #666
+
+
+header
+	background: url(../img/header_bg.jpg) top / cover
+	height: 1000px
+
+
+.dropdown button
+	background: url(../img/icons8-меню-50.png)
+	height: 26px
+	width: 26px
+	background-size: cover
+	border: none !important
+
+.open .dropdwon button
+	background: url(../img/icons8-меню-50.png) !important
+
+.btn-default:focus, .btn-default:hover
+	background-position: 0px !important
+
+.btn.active, .btn:active
+	background-image: linear-gradient !important
+
+
+
+.nav-pills li a
+	color: #000 !important
+
+.nav-pills-left
+	position: relative
+	bottom: 6px
+	right: 80px
+
+.dropdown
+	position: relative
+	top: 3px
+
+.logo a
+	font-family: 'Varela Round', sans-serif !important
+	font-size: 1em
+	text-decoration: none
+	color: #000
+	text-align: center
+	font-weight: 400
+	position: relative
+	top: 5px
+
+.logo a:hover
+	text-decoration: none
+	color: #000
+	opacity: .75
+
+.logo
+	text-align: center	
+
+.nav_right_block li a:first-child
+	color: #1b1c1e !important
+
+.nav_right_block li:last-child
+	color: #fff !important
+
+.nav_right_block li button
+	border-radius: 25px
+	background: #267df4
+	border-style: none
+	height: 40px
+	width: 110px
+
+
+.nav_btn
+	background: #267df4
+	border-radius: 20px
+	
+
+.nav_btn a, .nav_btn i
+	color: #fff !important
+
+.nav_right_block li a:last-child:hover
+	background-color: none !important
+
+.responsive_nav_btn button
+	background: #267df4
+	border-radius: 25px
+	border-style: none
+	height: 40px
+	width: 110px
+
+.responsive_nav_btn
+	color: #fff !important
+	margin-top: -25px
+	margin-right: 20px
+
+
+.header_menu
+	position: relative
+	top: 20px
+
+h1
+	font-size: 62px
+	text-align: center
+	color: #26272d
+	margin-top: 115px !important
+	margin-bottom: 60px !important
+
+.maintitle_block
+	color: #8c8f94
+	text-align: center
+	font-size: 20px
+	display: block !important
+
+
+.header_btn button
+	border-color: #dbdce0
+	height: 50px
+	width: 200px
+	border-radius: 20px
+	padding: 12px
+	border-style: solid
+	margin-top: 80px
+
+.header_btn button:hover
+	background-color: #e7e6e6
+
+
+.container_features 
+	margin-top: 120px !important
+
+.features_img
+	margin-bottom: 40px
+
+.features_title
+	font-size: 26px
+
+.features_text p
+	color: #8c8f94
+	font-size: 18px
+	margin-top: 45px
+
+.features_block
+	width: 47% !important
+
+.container_features
+	margin-bottom: 160px
+
+.iPhone6
+	position: absolute
+	left: -270px
+
+.parallax_container
+	position: absolute
+	left: -100px
+
+#iphone 
+	height: 850px
+
+.varela
+	font-family: 'Varela Round', sans-serif !important
+
+.iphone_title
+	@extend .varela
+	font-size: 42px 
+
+.iphone_text p
+	font-size: 20px
+	color: #8c8f94
+	
+.iphone_text p:first-child
+	margin-top: 60px
+
+.iphone_text p:last-child
+	margin-top: 30px
+	margin-bottom: 60px
+
+#iphone button:first-child
+	background: #267df4
+	border-radius: 20px
+	color: #fff
+	border-style: solid
+	height: 40px
+	width: 200px
+
+#iphone button:first-child i
+	position: relative
+	left: 20px
+
+
+#iphone button:last-child
+	border-color: #dbdce0
+	width: 135px
+	height: 40px
+	border-style: solid
+	border-radius: 20px
+	margin-right: 110px
+
+.iphone_block
+	margin-top: 100px
+
+#map
+	margin-top: 200px
+
+.map_title
+	@extend .varela
+	font-size: 42px
+	margin-bottom: 70px
+
+.map_text p
+	color: #8c8f94
+	font-size: 20px
+
+.map_text p:first-child
+	margin-bottom: 30px
+
+
+.map_text p:last-child
+	margin-bottom: 60px
+
+.map_partners
+	margin-bottom: 20px
+
+.map_logos img:first-child
+	margin-right: 20px
+
+.map_world
+
+
+#map .container
+	margin-bottom: 150px
+
+$gray: #8c8f94
+
+#screens
+	background-color: #f5f5f8
+
+#screens h3
+	font-size: 42px
+	@extend .varela
+	text-align: center
+	margin-top: 140px
+
+#screens hr
+	color: #267df4 !important
+	width: 60px
+	background: #267df4 !important
+	background-color: #267df4 !important
+	border: none
+	height: 2px
+	margin-top: 40px
+	margin-bottom: 30px
+
+.container_screens
+	width: 100%
+
+.animated_screen
+	position: relative
+
+.screens_landing
+	font-size: 12px
+	text-transform: uppercase
+	color: $gray
+
+.screens_iphone
+	display: -webkit-inline-flex
+	 display: -moz-inline-flex
+	 display: -ms-inline-flex
+	 display: -o-inline-flex
+	 display: inline-flex 
+
+.screens_iphone
+	position: relative
+	right: 30px 
+	
+.screens_iphone li:first-child
+	width: 235px
+	margin-top: 90px
+	float: left
+
+.screens_iphone li:nth-child(2)
+	width: 320px
+	margin-right: 40px
+	margin-top: 90px
+
+.screens_iphone li:nth-child(3)
+	width: 370px
+	margin-right: 40px
+.screens_iphone li:nth-child(4)
+	width: 320px
+	margin-right: 40px
+	margin-top: 90px
+
+.screens_iphone li:last-child
+	width: 235px
+	margin-top: 90px
+	float: right
+	
+#screens .container_screens
+	text-align: center
+
+.screens_slider
+	display: none
+
+
+
+.slide3
+	position: relative;
+	left: 55px;
+	top: 50px;
+
+.slide2
+	position: relative
+	top: 25px
+
+.slide1
+	position: relative;
+	left: 55px;
+	top: 50px;
+
+#get p
+	text-transform: uppercase
+	font-size: 12px
+	color: $gray
+	margin-bottom: 30px
+
+#get h4
+	font-size: 42px
+	@extend .varela
+	margin-bottom: 50px
+
+
+.input-group
+	border: 1px #cfcfd2
+	border-radius: 25px
+	border-style: solid
+	padding: 3px
+	width: 500px
+
+.form-control
+	border-radius: 25px
+	border: none
+	background: transparent !important
+	width: 334px !important
+	margin: 0px auto !important
+	box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px inset !important
+
+.form-control:focus
+	border-color: none !important
+	webkit-box-shadow: none
+	box-shadow: none
+
+
+
+.input-group-btn button
+	border-radius: 500em !important
+	width: 158px
+	background: #6fc754
+	color: #fff
+
+.input-group-btn button:focus,
+.input-group-btn button:active,
+.input-group-btn button:hover
+	background-color: #6fc754 !important
+	color: #fff !important
+
+// .btn-default.active, .btn-default:active, .open
+// 	.dropdown-toggle.btn-default
+// 		background-image: radial-gradient !important
+
+
+
+.get_download
+	font-size: 12px
+	color: $gray
+	text-transform: uppercase
+	margin-top: 50px
+	margin-bottom: 20px
+
+#get a img
+	margin-bottom: 130px
+
+
+#customers
+	background-color: #fff
+
+#customers h4
+	text-align: center
+	font-size: 32px
+
+#customers p
+	font-size: 20px
+	color: $gray
+	text-align: center
+	margin-top: 50px
+	margin-bottom: 30px
+
+.customers_author
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: bold
+	margin-top: 50px
+	margin-bottom: 70px
+
+// Slick
+.show 
+  display: block!important;
+
+.hide
+  visible: none!important;
+
+.preloader
+  display: none
+  text-align: center
+  width: 50px
+  height: 50px
+  margin: 0px auto
+
+.slider
+	margin-top: 70px
+	margin-bottom: 50px
+
+
+.slick-prev:before,
+.slick-next:before
+	color: $gray
+
+.slide2
+	top: 50px
+	left: 55px;
+
+.slide1 img,
+.slide2 img,
+.slide3 img
+  border-radius: 100%;
+  width: 130px;
+  height: 130px;
+  z-index: 2;
+  opacity: .35
+  
+	
+.slider_photos .slick-track, .slider_photos .slick-list
+	margin-bottom: 100px
+	height: 200px !important
+
+.slider_photos .slick-slide
+	margin-left: 170px
+
+.slider_content .slick-slide
+	margin-left: 170px
+	position: relative
+	right: 90px
+
+.slick-slide img
+	margin: 0px auto
+
+.slick-track
+	overflow: hidden
+
+.slider_photos .slick-current
+	transform: scale(1.2)
+	transition: cubic-bezier(1,0,0,1);
+	transition-duration: 1s;
+	top: 60px
+	
+.slider_photos .slick-current img
+	opacity: 1 !important
+
+.slider_content
+	width: 700px !important
+	position: relative
+	right: 60px
+
+.slider_content .slick_list
+	width: 100% !important
+
+.slider_content .slick-track, .slider_content .slick-list
+	height: 100% !important
+// 
+
+
+
+
+#plan
+	background: #f4f4f5
+
+.plan_left-block
+	margin-top: 200px
+
+
+#plan h3
+	@extend .varela
+	font-size: 42px
+	margin-bottom: 60px
+	text-transform: uppercase
+
+.plan_left-block-minicaption
+	font-size: 12px
+	text-transform: uppercase
+	font-weight: bold
+
+.plan_caption
+ 	font-size: 20px
+ 	color: $gray
+ 	margin-top: 85px
+ 	margin-bottom: 40px
+
+.plan_team
+	color: $gray
+	font-size: 14px
+
+.plan_team a
+	color: #0054b9
+	
+
+.plan_right-block
+	margin-top: 160px
+
+.starter_block, .pro_block
+	width: 50%;
+	height: 550px;
+	margin-right: -20px;
+	transform: scale(0.9) !important
+	background-color: #ebebed !important;
+	border-radius: 5px !important;
+	box-shadow: 0 !important
+	margin-bottom: 185px
+
+.starter_block:hover, 
+.pro_block:hover
+	background-color: #fff !important;
+	transform: scale(1) !important;
+	box-shadow: 15px 15px 30px grey !important;
+	z-index: 2 !important;
+
+
+// .starter_block
+// 	position: relative
+// 	float: left
+// 	width: 50%
+// 	height: 510px
+// 	border-radius: 15px
+// 	margin-bottom: 185px
+// 	background: #fff !important
+// 	box-shadow:         14px 14px 20px 0px rgba(50, 50, 50, 0.35)
+// 	z-index: 10
+// 	height: 550px
+
+.starter_block h5
+	margin-top: 55px
+	font-size: 32px
+	margin-bottom: 20px
+
+.starter_price
+	font-size: 11px
+	text-transform: uppercase
+	font-weight: bold
+	border-radius: 25px
+	border: 1px solid #000
+	width: 60px
+	border-color: #d4d4d5
+	padding: 5px
+	margin: 0px auto
+
+
+.starter_caption
+	margin-top: 55px
+	color: $gray
+	font-size: 20px
+	margin-bottom: 44px
+
+.plan_right-block li:before
+	content: '✔ '
+	color: #6fc754
+
+.plan_right-block li
+	margin-bottom: 25px
+
+
+// .btn_started
+// 	width: 200px
+// 	height: 40px
+// 	color: #fff
+// 	background: #267df4
+// 	border-radius: 25px
+// 	border-style: solid
+// 	margin-top: 60px
+// 	margin-left: 65px
+
+
+// .pro_block
+// 	float: right
+// 	width: 50%
+// 	height: 510px
+// 	background: #ebebed
+// 	border-radius: 15px
+// 	position: relative
+// 	top: 20px
+
+
+
+.pro_block h5
+	margin-top: 40px
+	font-size: 32px
+	margin-bottom: 20px
+
+.btn_pro, .btn_starter
+	width: 200px
+	height: 40px
+	color: #267df4
+	background: transparent
+	border-radius: 25px
+	border-style: solid
+	margin-left: 65px
+	margin-top: 7px
+
+.btn_starter
+	position: relative !important;
+	top: 35px !important;
+
+.btn_pro:hover,
+.btn_starter:hover
+	background: #267df4
+	color: #fff
+
+
+// Переключатель
+
+.icon 
+	position: relative
+	// left: 100px
+	top: 20px
+	border-radius: 70px
+	background-color: #EFF4FF
+	box-shadow: 0 2px 1px 0 rgba(255, 255, 255, 0.5), inset 0 1px 3px 0 rgba(0, 0, 0, 0.2)
+	width: 256px
+	height: 44px
+	margin-right: 80px
+	overflow: hidden
+	-webkit-transition: all .25s linear
+	-moz-transition: all .25s linear
+	-o-transition: all .25s linear
+	transition: all .25s linear
+	cursor: pointer
+	-webkit-touch-callout: none
+	-webkit-user-select: none
+	-khtml-user-select: none
+	-moz-user-select: none
+	-ms-user-select: none
+	user-select: none
+
+.icon .handle 
+	width: 126px
+	height: 40px
+	border-radius: 25px
+	position: absolute
+	top: 2.5px
+	background: transparent
+	box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.2), 0px 4px 23px 0 rgba(0, 0, 0, 0.08), -2px 4px 4px 0 rgba(0, 0, 0, 0.1)
+	font-size: 20px
+	// line-height: 22px
+	// color: #6D808E
+	text-decoration: none
+	font-size: 44px
+	// color: #D8DAD9
+	// line-height: 107px
+	text-align: center
+	left: 5px
+	-webkit-transition: all 0.4s cubic-bezier(0.33, 1.6, 0.66, 1)
+	-moz-transition: all 0.4s cubic-bezier(0.33, 1.6, 0.66, 1)
+	-o-transition: all 0.4s cubic-bezier(0.33, 1.6, 0.66, 1)
+	transition: all 0.4s cubic-bezier(0.33, 1.6, 0.66, 1)
+
+.icon .handle:before 
+	-webkit-font-smoothing: antialiased
+
+.icon .handle:after 
+	// content: "ON"
+	font-size: 58px
+	font-weight: 400
+	color: #FFF
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.1)
+	position: absolute
+	left: -110px
+
+.icon.on 
+	background: #FFF
+
+.icon.on .handle 
+	left: 126px
+	color: #FFA400
+
+.icon p:first-child
+	position: relative
+	left: 30px
+	top: 10px
+
+.icon p:nth-child(2)
+	position: relative
+	bottom: 22px
+	left: 160px
+
+
+#subscribe
+	background: #fff
+
+#subscribe h2
+	@extend .varela
+	font-size: 42px
+	margin-top: 85px
+	margin-bottom: 40px
+
+#subscribe p
+	font-size: 14px
+	color: $gray
+	text-align: center
+	margin-top: 20px
+	margin-bottom: 80px
+
+
+footer
+	background: #fff
+
+.footer_left-block
+	margin-top: 80px
+	margin-bottom: 140px
+
+.logo_footer
+	text-align: left
+
+.footer_caption
+	color: $gray
+	font-size: 14px
+	margin-top: 30px
+	margin-bottom: 30px
+
+.social_icons
+	display: flex
+	margin-top: 30px
+
+.social_icons li
+	margin-right: 20px
+
+
+.footer_right-block
+	margin-top: 80px
+
+.footer_right-block h5
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 12px
+	margin-bottom: 15px
+
+.footer_right-block li a
+	font-size: 16px
+	color: $gray
+
+
+.footer_right-block li
+	margin-bottom: 12px
+
+
+.down_footer-link
+	font-size: 14px
+	color: $gray
+
+.down_footer-link a
+	color: #3b55e6
+
+.down_footer-logo
+	text-transform: uppercase
+	font-weight: bold
+	font-size: 9px
+
+.down_footer-logo img
+	margin-left: 15px
+
+
+.gamburger1 
+	position: relative
+	z-index: 9999    
+	top: 6px    
+	right: 0px
+
+.gamburger1 i.gamburger3
+	color: #000    
+	width: 43px    
+	height: 39px    
+	text-align: center    
+	font-size: 22px        
+	background: transparent    
+	padding-top: 4px    
+	cursor: pointer 
+
+.gamburger1 i.gamburger3:hover     
+	// background: #fff    
+	// color: #1c4482  
+
+.gamburger2 
+	overflow: hidden
+
+.gamburger3 
+	float: left
+	position: relative
+	bottom: 5px
+
+.gamburger4 
+	// float: left    
+	// margin-right: -100px    
+	visibility: hidden    
+	transition: all 0.3s ease    
+	-webkit-transition: all 0.3s ease   
+	background: #fff    
+	padding: 15px 25px
+	position: absolute;
+	margin-top: 40px
+	width: 170px;
+	// opacity: 0;
+
+.gamburger5 
+	list-style-type: none    
+	margin: 0px    
+	padding: 0px
+
+.gamburger5 li 
+	margin-bottom: 5px
+
+.gamburger5 li a 
+	font-size: 17px   
+	color: #000    
+	text-decoration: none
+
+.gamburger5 li a:hover 
+	color: #222
+	opacity: .75
+
+.back-top
+	position: fixed
+	right: 10px
+	bottom: 15px
+	font-size: 50px
+	opacity: .7
+	z-index: 10000
+
+.back-top:hover
+	opacity: .5
