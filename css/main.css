@@ -47,7 +47,8 @@ body textarea:required:valid {
 
 header {
   background: url(../img/header_bg.jpg) top/cover;
-  height: 1000px;
+  min-height: 1000px;
+  height: 100vh;
 }
 
 .dropdown button {
