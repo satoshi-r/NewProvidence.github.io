@@ -15,5 +15,13 @@
   "dependencies": {
     "magnific-popup": "^1.1.0",
     "parallax-js": "^3.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/satoshi-r/NewProvidence.github.io.git"
+  },
+  "bugs": {
+    "url": "https://github.com/satoshi-r/NewProvidence.github.io/issues"
+  },
+  "homepage": "https://github.com/satoshi-r/NewProvidence.github.io#readme"
 }

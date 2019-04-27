@@ -3,7 +3,7 @@
   "description": "",
   "main": "gulpfile.js",
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/satoshi-r/NewProvidence.github.io",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -14,5 +14,8 @@
   "dependencies": {
     "formstone": "^1.4.3",
     "animate.css": "^3.5.2"
-  }
+  },
+  "authors": [
+    "satoshi-r"
+  ]
 }
