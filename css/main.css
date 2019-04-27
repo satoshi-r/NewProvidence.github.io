@@ -572,6 +572,7 @@ h1 {
 
 .slider_photos .slick-current img {
   opacity: 1 !important;
+  cursor: pointer;
 }
 
 .slider_content {
