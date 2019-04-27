@@ -41,26 +41,19 @@
 			<div class="row header_menu">
 				<div class="col-md-4 nav_left_block">
 					
-				<!-- Burger -->
-					<div class="gamburger1 pull-left">
-						<div class="gamburger2">
-							<i class="fa fa-bars gamburger3" datas="off"></i>
-							<div class="gamburger4">
-								<ul class="gamburger5">
-									<li><a href="">How it works?</a></li>
-									<li><a href="">Meeting tools</a></li>
-									<li><a href="">Live streaming</a></li>
-									<li><a href="">Contat method</a></li>
-									<li class="visible-xs visible-sm"><a href="#map">Tour</a></li>
-									<li class="visible-xs visible-sm"><a href="#screens">Features</a></li>
-									<li class="visible-xs visible-sm"><a href="#plan">Pricing</a></li>
-									<li class="visible-xs visible-sm"><a href="">Help</a></li>
-									<li class="visible-xs visible-sm"><a href="">Contacts</a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				<!--  -->
+				<!-- BURGER -->
+				<div id="burger" class="col-sm-1 hidden-lg pull-right col-xs-3">
+					<a href="#" onclick="hold()"><i class="fa fa-bars"></i></a>
+				</div>
+				
+				<div id="leftdrop">
+					<ul class="nav nav-pills">
+						<li><a href="#" id="close" onclick="times()"><i class="fa fa-times"></i></a></li>
+						<li role="presentation"><a class="go_to" href="#map">Tour</a></li>
+						<li role="presentation"><a href="#screens">Features</a></li>
+						<li role="presentation"><a href="#plan">Pricing</a></li>
+					</ul>
+				</div>
 					<ul class="nav nav-pills nav-pills-left pull-right">
 					  <li role="presentation"><a class="go_to" href="#map">Tour</a></li>
 					  <li role="presentation"><a href="#screens">Features</a></li>
