@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:100,300,400,700|Varela+Round')
 //@import '_bootstrap-toggle'
+
+
 // Preloader
 #hellopreloader>p
-  display: none;
+  display: none
 
 
 #hellopreloader_preload
-  display: block;
-  position: fixed;
-  z-index: 99999;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  // min-width: 1000px;
-  background: #336E7B url(http://hello-site.ru//main/images/preloads/three-dots.svg) center center no-repeat;
+  display: block
+  position: fixed
+  z-index: 99999
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  background: #336E7B url(http://hello-site.ru//main/images/preloads/three-dots.svg) center center no-repeat
   background-size: 78px
-
-//
+// end preloader
 
 
 
 a, a:hover, a:focus, a:active
 	text-decoration: none
 	color: #000
+
 
 li
 	list-style-type: none
@@ -52,7 +53,6 @@ header
 	min-height: 1000px
 	height: 100vh
 
-
 .dropdown button
 	background: url(../img/icons8-меню-50.png)
 	height: 26px
@@ -71,100 +71,85 @@ header
 
 
 // burger
-@keyframes opac
-	from
-		opacity: 0.5
-	to
-		opacity: 1
-
-@keyframes leftdrop_in
-	from
-		margin-right: -1000px
-	to
-		margin-right: 0px
-
-@keyframes leftdrop_out
-	from
-		margin-right: 0
-	to
-		margin-right: -1000px
-
 @keyframes alarm
 	0%
-		transform: rotate(-15deg)
+		transform: rotate(60deg)
 	20%
-		transform: rotate(0deg)
+		transform: rotate(120deg)
 	40%
-		transform: rotate(15deg)
+		transform: rotate(180deg)
 	60%
-		transform: rotate(-15deg)
+		transform: rotate(240deg)
 	80%
-		transform: rotate(0deg)
+		transform: rotate(300deg)
 	100%
-		transform: rotate(15deg)
+		transform: rotate(360deg)
 
 #leftdrop
 	position: fixed
 	top: 0
-	right: 0
-	width: 320px
-	height: 100%
-	background: linear-gradient(to bottom, #182d36, #2b7087)
-	display:none
-	color: white
-	text-align: left
-	animation: leftdrop_in .7s 1
-	animation-fill-mode: forwards
+	left: 0
+	width: 100vw
+	height: 100vh
 	z-index: 50
-	opacity: .9
+	opacity: .98
+	display: none
+	background-color: #eee
+	text-align: center
+	li
+		display: block !important
 
-#leftdrop a
-	color: white
-
-
-#close i
-	font-size: x-large
+#leftdrop li a
+	font-size: 28px
+	&:hover
+		opacity: 0.7
+	
 
 #leftdrop ul
-	margin-top: 60px
-	margin-right: 20px
-	margin-left: 40px
+	height: 100%
+	display: flex
+	flex-direction: column
+	justify-content: space-evenly
 
-#leftdrop li
-	margin-top: 15px
+#close i
+	animation: alarm .5s 1
+	animation-fill-mode: forwards
+	font-size: 32px
 
-
-#close
-	margin-top: -30px
-	float: right
-	color: white
-
-
-#leftdrop li a:hover 
-	color: #267df4
-	animation: opac .5s 1
+#burger a
+	opacity: 1
+	background-color: transparent
+	border-radius: 0
+	padding: 0
 
 
-#burger
-	text-align: center
-	position: relative
-	top: 25px
-	right: 0px
-
+.leftdrop_adaptive
+	display: none
 
 #burger i
-	font-size: xx-large
-	color: #fff
+	font-size: larger
+	color: #000
 
 //end burger 
 
 .nav-pills li a
 	color: #000 !important
 
+
+
 .nav-pills-left
-	position: relative
-	bottom: 6px
-	right: 80px
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 40px
+
+.nav-pills-right
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	height: 40px
 
 .dropdown
 	position: relative
@@ -186,21 +171,42 @@ header
 	opacity: .75
 
 .logo
-	text-align: center
+	display: flex
+	height: 40px
+	justify-content: center
+	align-items: center
+	padding-bottom: 6px
 
-.nav_right_block li a:first-child
-	color: #1b1c1e !important
+.nav li a:focus
+	background-color: initial
+
+.nav li a:hover
+	background-color: initial
+	opacity: .7
+
+	
+
+.nav-pills > li > a
+	border-radius: 0
+
+.nav > li > a
+	padding: 0
 
 .nav_right_block li:last-child
 	color: #fff !important
 
 .nav_right_block li button
 	border-radius: 25px
-	background: #267df4
+	background-color: #267df4
 	border-style: none
 	height: 40px
 	width: 110px
-
+	&:hover
+		background-color: #fff
+		color: #267df4
+		border: 2px solid #267df4
+		.fa-apple::before
+			color: #267df4 !important
 
 .nav_btn
 	background: #267df4
@@ -208,7 +214,7 @@ header
 
 
 .nav_btn a, .nav_btn i
-	color: #fff !important
+	color: #fff
 
 .nav_right_block li a:last-child:hover
 	background-color: none !important
@@ -229,6 +235,8 @@ header
 .header_menu
 	position: relative
 	padding-top: 20px
+	display: flex
+	justify-content: space-between
 
 h1
 	font-size: 62px

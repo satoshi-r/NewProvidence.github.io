@@ -1,7 +1,3 @@
 node_modules
 *.map
-<<<<<<< HEAD
 *.code-workspace
-=======
-*.code-workspace
->>>>>>> 1aa2b6006a7b1f27f04a808882939a465bb094bc

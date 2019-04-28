@@ -1,20 +1,15 @@
 $(document).ready(function(){
-	// Burger menu
-	$(".gamburger3").click(function() {
-		if($(".gamburger3").attr('datas') == 'off') {     
-			$(".gamburger4").attr('style', 'visibility: visible; margin-right: 0px;');
-			$(".gamburger3").attr('datas', 'on');
-			$(".gamburger3").removeClass("fa-bars");
-			$(".gamburger3").addClass("fa-times");
-		}
-		else {                                        
-			$(".gamburger4").attr('style', 'visibility: hidden;');
-			$(".gamburger3").attr('datas', 'off');
-			$(".gamburger3").removeClass("fa-times");
-			$(".gamburger3").addClass("fa-bars");
-		}
+	// burger
+	$('#burger a').click(function () {
+		$('#leftdrop').slideDown();
+		$('leftdrop').css({'display':'flex'});
+		$('body').css({'overflow-y':'hidden'});
 	});
-
+	$('#close').click(function () {
+		$('#leftdrop').slideUp();
+		$('body').css({ 'overflow-y': 'auto' });
+	});
+	
 	// Pop-up video
 	$('.popup-youtube').magnificPopup({
 		disableOn: 700,

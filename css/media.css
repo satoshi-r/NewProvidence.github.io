@@ -32,14 +32,18 @@
 @media screen and (max-width: 992px)
 {
 	/*header*/
-	.nav-pills-left
+	.nav-pills-left li:not(:first-child)
 	{
 		display: none;
 	}
 
-	.nav_right_block
+	.nav-pills-right li:not(:last-child)
 	{
 		display: none;
+	}
+
+	.leftdrop_adaptive {
+		display: block;
 	}
 
 	/*iphone*/
@@ -98,16 +102,6 @@
 	{
 		width: 150px;
 		margin: 0px auto;
-	}
-
-	.nav-pills-left
-	{
-		display: none;
-	}
-
-	.nav_right_block
-	{
-		display: none;
 	}
 	
 	h1
@@ -313,13 +307,12 @@
 		font-size: 0.8em;
 	}
 
-	.responsive_nav_btn
-	{
-		font-size: 0.8em;
-		height: 36px;
-		width: 90px;
+	#leftdrop li a {
+		font-size: 24px
 	}
-	
+	.nav_btn {
+		display: none !important;
+	}
 	/*features*/
 	.features_block, .features_block2
 	{
