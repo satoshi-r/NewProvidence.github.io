@@ -206,7 +206,7 @@
 	{
 		height: 400px;
 	}
-	.screens_slider .screens_slider-exception {
+	.screens_slider .slick-slide .screens_slider-exception {
 		transform: scale(0.85);
 		position: relative;
 		bottom: 23px;
