@@ -96,10 +96,10 @@ $(document).ready(function(){
 			$(".screens_slider").slick({
 				arrows: false,
 				centerMode: true,
-				autoplay: true,
+				autoplay: false,
 				speed: 100,
 		    centerPadding: '60px',
-		    initialSlide: 2,
+		    initialSlide: 3,
 				responsive: [
 				{
 					breakpoint: 768,

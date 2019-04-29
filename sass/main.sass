@@ -408,38 +408,88 @@ $gray: #8c8f94
 	color: $gray
 
 .screens_iphone
-	display: -webkit-inline-flex
-	 display: -moz-inline-flex
-	 display: -ms-inline-flex
-	 display: -o-inline-flex
-	 display: inline-flex
+	display: flex
+	flex-direction: row
+	justify-content: space-around
+	align-items: center
 
-.screens_iphone
-	position: relative
-	right: 30px
-
-.screens_iphone li:first-child
-	width: 235px
-	margin-top: 90px
-	float: left
-
-.screens_iphone li:nth-child(2)
+.screens_iphone li
+	height: 600px
 	width: 320px
-	margin-right: 40px
-	margin-top: 90px
+	background-position: top
+	background-size: contain
+	background-repeat: no-repeat
+	&:first-child
+		background-image: url('../img/Screen_1.png')
+		background-size: 100% 100%
+		width: 236px
+		height: 414px
+		position: relative
+		top: 18px
+		background-position: center
+		-webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2)
+		-moz-box-shadow:    7px 13px 30px 0px rgba(50, 50, 50, 0.2)
+		box-shadow:         7px 13px 30px 0px rgba(50, 50, 50, 0.2)
+	&:nth-child(2)
+		background-image: url('../img/Screen_2.png')
+	&:nth-child(3)
+		background-image: url('../img/Screen_3.png')
+		background-position-x: 10px
+	&:nth-child(4)
+		background-image: url('../img/Screen_4.png')
+	&:last-child
+		background-image: url('../img/Screen_5.png')
+		background-size: 100% 100%
+		width: 236px
+		height: 414px
+		position: relative
+		top: 18px
+		background-position: center
+		-webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2)
+		-moz-box-shadow:    7px 13px 30px 0px rgba(50, 50, 50, 0.2)
+		box-shadow:         7px 13px 30px 0px rgba(50, 50, 50, 0.2)
 
-.screens_iphone li:nth-child(3)
-	width: 370px
-	margin-right: 40px
-.screens_iphone li:nth-child(4)
-	width: 320px
-	margin-right: 40px
-	margin-top: 90px
+.screens_slider .slick-slide .screens_slider-exception
+	transform: scale(0.42)
+	position: absolute
+	bottom: -100px
+	-webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+	-moz-box-shadow:    7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+	box-shadow:         7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+	
 
-.screens_iphone li:last-child
-	width: 235px
-	margin-top: 90px
-	float: right
+.screens_slider .slick-slide
+	display: flex !important
+	justify-content: center
+	& img:not(.screens_slider-exception)
+		position: relative
+		left: 1vw
+// .screens_iphone
+// 	position: relative
+// 	right: 30px
+
+// .screens_iphone li:first-child
+// 	width: 235px
+// 	margin-top: 90px
+// 	float: left
+
+// .screens_iphone li:nth-child(2)
+// 	width: 320px
+// 	margin-right: 40px
+// 	margin-top: 90px
+
+// .screens_iphone li:nth-child(3)
+// 	width: 370px
+// 	margin-right: 40px
+// .screens_iphone li:nth-child(4)
+// 	width: 320px
+// 	margin-right: 40px
+// 	margin-top: 90px
+
+// .screens_iphone li:last-child
+// 	width: 235px
+// 	margin-top: 90px
+// 	float: right
 
 #screens .container_screens
 	text-align: center

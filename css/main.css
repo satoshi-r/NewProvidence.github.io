@@ -536,45 +536,86 @@ h1 {
 }
 
 .screens_iphone {
-  display: -webkit-inline-flex;
-  display-display: -moz-inline-flex;
-  display-display: -ms-inline-flex;
-  display-display: -o-inline-flex;
-  display-display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.screens_iphone {
-  position: relative;
-  right: 30px;
+.screens_iphone li {
+  height: 600px;
+  width: 320px;
+  background-position: top;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .screens_iphone li:first-child {
-  width: 235px;
-  margin-top: 90px;
-  float: left;
+  background-image: url("../img/Screen_1.png");
+  background-size: 100% 100%;
+  width: 236px;
+  height: 414px;
+  position: relative;
+  top: 18px;
+  background-position: center;
+  -webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
 }
 
 .screens_iphone li:nth-child(2) {
-  width: 320px;
-  margin-right: 40px;
-  margin-top: 90px;
+  background-image: url("../img/Screen_2.png");
 }
 
 .screens_iphone li:nth-child(3) {
-  width: 370px;
-  margin-right: 40px;
+  background-image: url("../img/Screen_3.png");
+  background-position-x: 10px;
 }
 
 .screens_iphone li:nth-child(4) {
-  width: 320px;
-  margin-right: 40px;
-  margin-top: 90px;
+  background-image: url("../img/Screen_4.png");
 }
 
 .screens_iphone li:last-child {
-  width: 235px;
-  margin-top: 90px;
-  float: right;
+  background-image: url("../img/Screen_5.png");
+  background-size: 100% 100%;
+  width: 236px;
+  height: 414px;
+  position: relative;
+  top: 18px;
+  background-position: center;
+  -webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+}
+
+.screens_slider .slick-slide .screens_slider-exception {
+  -webkit-transform: scale(0.42);
+          transform: scale(0.42);
+  position: absolute;
+  bottom: -100px;
+  -webkit-box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+  box-shadow: 7px 13px 30px 0px rgba(50, 50, 50, 0.2);
+}
+
+.screens_slider .slick-slide {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.screens_slider .slick-slide img:not(.screens_slider-exception) {
+  position: relative;
+  left: 1vw;
 }
 
 #screens .container_screens {
