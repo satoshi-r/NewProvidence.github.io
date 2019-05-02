@@ -3,11 +3,11 @@ $(document).ready(function(){
 	$('#burger a').click(function () {
 		$('#leftdrop').slideDown();
 		$('leftdrop').css({'display':'flex'});
-		$('body').css({'overflow-y':'hidden'});
+		$('html').css({'overflow-y':'hidden'});
 	});
 	$('#close').click(function () {
 		$('#leftdrop').slideUp();
-		$('body').css({ 'overflow-y': 'auto' });
+		$('html').css({ 'overflow-y': 'auto' });
 	});
 	
 	// Pop-up video
