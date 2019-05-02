@@ -11,7 +11,7 @@ $(document).ready(function(){
 	});
 	// Menu-contacts
 	var menu_link = $('.nav-pills-right li:nth-child(2) a');
-	var menu_components = $('.nav_right_block ul:not("")');
+	var menu_components = $('.nav_right_block ul:not(.header_menu-contacts ul)');
 	var contacts_container = $('.header_menu-contacts');
 	menu_link.click(function () {
 		contacts_container.slideDown();
