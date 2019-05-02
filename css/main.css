@@ -333,9 +333,24 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 60px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+
+.header_menu .header_menu-contacts {
+  height: 100%;
+  width: 100%;
+  display: none;
+  background: transparent;
+  position: absolute;
+}
+
+.header_menu .header_menu-contacts ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 h1 {

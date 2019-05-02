@@ -9,6 +9,19 @@ $(document).ready(function(){
 		$('#leftdrop').slideUp();
 		$('html').css({ 'overflow-y': 'auto' });
 	});
+	// Menu-contacts
+	var menu_link = $('.nav-pills-right li:nth-child(2) a');
+	var menu_components = $('.nav_right_block ul:not("")');
+	var contacts_container = $('.header_menu-contacts');
+	menu_link.click(function () {
+		contacts_container.slideDown();
+		contacts_container.css('display','flex');
+		menu_components.fadeOut();
+	});
+	$('#close_contacts').click(function () {
+		contacts_container.slideUp();
+		menu_components.fadeIn();
+	});
 	
 	// Pop-up video
 	$('.popup-youtube').magnificPopup({
