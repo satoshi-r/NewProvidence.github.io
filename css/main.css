@@ -875,16 +875,27 @@ h1 {
   -webkit-box-shadow: 0 !important;
           box-shadow: 0 !important;
   margin-bottom: 185px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.starter_block:hover,
-.pro_block:hover {
+.starter_block:hover, .pro_block:hover {
   background-color: #fff !important;
   -webkit-transform: scale(1) !important;
           transform: scale(1) !important;
   -webkit-box-shadow: 15px 15px 30px grey !important;
           box-shadow: 15px 15px 30px grey !important;
   z-index: 2 !important;
+  -webkit-transition: .1s;
+  transition: .1s;
 }
 
 .starter_block h5 {
@@ -934,7 +945,6 @@ h1 {
   background: transparent;
   border-radius: 25px;
   border-style: solid;
-  margin-left: 65px;
   margin-top: 7px;
 }
 
@@ -947,6 +957,7 @@ h1 {
 .btn_starter:hover {
   background: #267df4;
   color: #fff;
+  border: 0;
 }
 
 .icon {

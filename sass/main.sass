@@ -715,13 +715,15 @@ $gray: #8c8f94
 	border-radius: 5px !important;
 	box-shadow: 0 !important
 	margin-bottom: 185px
-
-.starter_block:hover,
-.pro_block:hover
-	background-color: #fff !important;
-	transform: scale(1) !important;
-	box-shadow: 15px 15px 30px grey !important;
-	z-index: 2 !important;
+	display: flex
+	flex-direction: column
+	align-items: center
+	&:hover
+		background-color: #fff !important;
+		transform: scale(1) !important;
+		box-shadow: 15px 15px 30px grey !important;
+		z-index: 2 !important;
+		transition: .1s
 
 
 .starter_block h5
@@ -766,7 +768,6 @@ $gray: #8c8f94
 	background: transparent
 	border-radius: 25px
 	border-style: solid
-	margin-left: 65px
 	margin-top: 7px
 
 .btn_starter
@@ -777,6 +778,7 @@ $gray: #8c8f94
 .btn_starter:hover
 	background: #267df4
 	color: #fff
+	border: 0
 
 
 // Переключатель
