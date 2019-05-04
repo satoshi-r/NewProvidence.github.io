@@ -250,6 +250,22 @@ header
 		position: absolute
 		ul
 			display: flex
+			justify-content: space-evenly
+			width: 100%
+			align-items: center
+			li a img
+				filter: blur(0.5px)
+				&:hover
+					filter: none
+		#close_contacts
+			display: flex
+			flex-direction: column
+			justify-content: center
+			color: #555555
+			&:hover
+				opacity: 0.7
+			i
+				font-size: 22px
 h1
 	font-size: 62px
 	text-align: center
