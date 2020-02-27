@@ -1,1 +1,1 @@
-Practice landing page
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c1478b86-098e-428f-9718-8a2a6fc75c77/deploy-status)](https://app.netlify.com/sites/new-providence-lp/deploys)
